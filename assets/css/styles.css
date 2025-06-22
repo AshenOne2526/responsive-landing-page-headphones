@@ -72,6 +72,8 @@
 
 html{
   scroll-behavior: smooth;
+  scrollbar-width: thin; 
+  scrollbar-color: var(--scroll-thumb-color) transparent; 
 }
 
 body{
@@ -556,7 +558,19 @@ img{
 }
 
 /*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar{
+  width: .60rem; 
+  border-radius: .5rem;
+}
 
+::-webkit-scrollbar-thumb{
+  background-color: var(--scroll-thumb-color);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: var(--scroll-thumb-color-alt);
+}
 
 /*=============== MEDIA QUERIES ===============*/
 /* For small devices */
